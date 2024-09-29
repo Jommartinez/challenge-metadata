@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+.list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: $padding-medium;
+  margin: $padding-large 0;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

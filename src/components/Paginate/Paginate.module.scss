@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.paginate {
+  display: flex;
+  justify-content: space-between;
+  margin: $padding-large 0;
+  padding: $padding-medium 0;
+}
+
+.button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  color: var(--color-secondary);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  &:disabled {
+    color: $gray;
+  }
+}

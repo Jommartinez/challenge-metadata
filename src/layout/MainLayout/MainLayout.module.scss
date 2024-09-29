@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.mainLayout {
+  width: 100%;
+  max-width: $max-layout-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1200px) {
+  .mainLayout {
+    padding: 0;
+  }
+}

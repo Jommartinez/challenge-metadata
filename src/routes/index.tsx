@@ -1,19 +1,13 @@
-import { Outlet, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import { DetailLayout, ListLayout, MainLayout, ListFavorites } from '../layout'
 
 export const AppRoutes: React.FC = () => {
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <h1>Header y search</h1>
-            <Outlet />
-          </>
-        }
-      >
-        <Route index element={<h1>list</h1>} />
-        <Route path="/:id" element={<h1>detail</h1>} />
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<ListLayout />} />
+        <Route path="/favorites" element={<ListFavorites />} />
+        <Route path="/:id" element={<DetailLayout />} />
       </Route>
     </Routes>
   )

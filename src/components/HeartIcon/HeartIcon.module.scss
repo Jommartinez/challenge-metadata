@@ -1,0 +1,10 @@
+@import '../../styles/variables';
+
+.heart-icon {
+  &.selected {
+    fill: $danger-color;
+  }
+  &.unselected {
+    fill: $light-color;
+  }
+}

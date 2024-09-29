@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $primary-color;
+  color: $light-color;
+  padding: $padding-small 0;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: $primary-color;
+}
+
+.favorite {
+  display: flex;
+  align-items: center;
+  gap: $padding-small;
+  margin: 0;
+  font-size: 1rem;
+  color: $primary-color;
+  min-width: 100px;
+  p {
+    margin: 0;
+    text-align: right;
+  }
+}

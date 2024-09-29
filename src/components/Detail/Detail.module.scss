@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  max-height: 445px;
+  max-width: 300px;
+}
+
+.title-detail {
+  display: flex;
+  align-items: center;
+  gap: $padding-small;
+
+  .small {
+    font-size: 0.8rem;
+  }
+}
+
+.data {
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+.rating {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: $padding-small;
+  margin-bottom: $padding-medium;
+
+  .wrapper-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .votes {
+    font-size: 0.9rem;
+  }
+}
+
+.trophy {
+  display: flex;
+  align-items: center;
+  gap: $padding-small;
+  margin-top: $padding-medium;
+}

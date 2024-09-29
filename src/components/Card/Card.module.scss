@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-color;
+}
+
+.wrapper-image {
+  width: 100%;
+  height: 340px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: $padding-medium;
+  color: $light-color;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: $padding-medium $padding-small;
+}
+
+.line {
+  position: absolute;
+  background-color: $primary-color;
+  width: 100%;
+  height: 0.336rem;
+  top: -0.336rem;
+  left: 0;
+  transition: height 0.35s ease-in-out;
+  z-index: 1;
+}
+
+.title {
+  font-size: 0.875rem;
+  z-index: 2;
+  color: $light-color;
+}
+
+.icon {
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  stroke-width: 0.125rem;
+}
+
+.button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+}

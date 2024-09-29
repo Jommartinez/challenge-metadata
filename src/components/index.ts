@@ -1,0 +1,7 @@
+export { Header } from './Header/Header'
+export { HeartIcon } from './HeartIcon/HeartIcon'
+export { Search } from './Search/Search'
+export { Card } from './Card/Card'
+export { List } from './List/List'
+export { Paginate } from './Paginate/Paginate'
+export { Detail } from './Detail/Detail'

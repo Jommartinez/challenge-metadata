@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.wrapper-search {
+  display: flex;
+  margin: $padding-medium 0;
+}
+
+.input {
+  width: 100%;
+  padding: $padding-small;
+  border-radius: 1rem;
+  border: 1px solid $primary-color;
+}
+
+.select {
+  padding: $padding-small;
+  border-radius: 1rem;
+  border: 1px solid $primary-color;
+  margin-left: $padding-small;
+}
