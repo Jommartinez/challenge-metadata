@@ -11,7 +11,7 @@ export const DetailLayout = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetchDetail(id)
+      const response = await fetchDetail(id!)
       setDetail(response?.data)
     } catch (error) {
       console.error('Error fetching response', error)
