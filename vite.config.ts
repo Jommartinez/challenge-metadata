@@ -11,4 +11,11 @@ export default defineConfig({
     setupFiles: './src/tests/setup.ts',
     environment: 'jsdom',
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+      },
+    },
+  },
 })
